@@ -18,35 +18,41 @@ footer {
   bottom: 0px;
   color: #dbedf3;
   font-family: sans-serif;
-  left: 43%;
   font-size: 1.5rem;
 }
 
-.w {
+.w,
+.W {
   background-image: url(images/tom1.png);
 }
 
-.a {
+.a,
+.A {
   background-image: url(images/tom2.png);
 }
 
-.s {
+.s,
+.S {
   background-image: url(images/tom3.png);
 }
 
-.d {
+.d,
+.D {
   background-image: url(images/tom4.png);
 }
 
-.j {
+.j,
+.J {
   background-image: url(images/crash.png);
 }
 
-.k {
+.k,
+.K {
   background-image: url(images/kick.png);
 }
 
-.l {
+.l,
+.L {
   background-image: url(images/snare.png);
 }
 
@@ -67,10 +73,7 @@ footer {
 .red {
   color: red;
 }
-.pressed {
-  box-shadow: 0 3px 4px 0 #dbedf3;
-  opacity: 0.5;
-}
+
 .drum {
   outline: none;
   border: 10px solid #404b69;
@@ -89,16 +92,34 @@ footer {
   background-color: white;
 }
 
-@media (max-width: 992px) {
+@media (max-width: 762px) {
+  .drum {
+    font-size: 3rem;
+    border-radius: 15px;
+    width: 135px;
+    height: 114px;
+    margin: 10px auto;
+  }
+  .drum-align:nth-child(odd) {
+    text-align: right;
+  }
+  .drum-align:nth-child(even) {
+    text-align: left;
+  }
+  .drum-align:last-child {
+    text-align: center;
+  }
   h1 {
-    font-size: 8.5rem;
+    font-size: 3rem;
   }
   .set {
     margin: 19% auto;
   }
   footer {
-    font-size: 2rem;
-    position: absolute;
-    bottom: 0px;
+    font-size: 1rem;
+  }
+  .row {
+    text-align: center;
+    justify-content: center;
   }
 }
